@@ -11,3 +11,4 @@ schminken <- c(41,3,38,4,0,5)
 
 # normalizing
 
+
