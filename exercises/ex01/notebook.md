@@ -130,7 +130,7 @@ base verbs
     ## multiple of shorter object length
 
 5
-=
+-
 
 Compute the sums of the difference vectors, and (manually) sort the
 particle/base verb pairs according to the difference in their sums.

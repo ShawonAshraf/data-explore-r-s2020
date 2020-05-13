@@ -127,7 +127,7 @@ aufschaukeln.comp <- aufschaukeln.all.norm - schaukeln.all.norm
 nachkochen.comp   <- nachkochen.all.norm   - kochen.all.norm 
 ```
 
-# 5
+## 5
 Compute the sums of the difference vectors, and (manually) sort the particle/base verb pairs according to the difference in their sums. Which are the most similar combinations of particle verb and base verb, i.e., which are the most compositional particle verbs, assuming that vector similarity indicates compositionality?
 
 ```{r}
