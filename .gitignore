@@ -103,3 +103,5 @@ $RECYCLE.BIN/
 project/data/*.txt
 project/data/*.csv
 project/data/*.xlsx
+
+project/raw_data/
