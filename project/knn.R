@@ -15,7 +15,7 @@ pacman::p_load(class)
 windows.knn <- subset(windows, target %in% norms_f$Word)
 
 # knn on windows.knn
-# k = 12
+# k = 13
 
 # normalize
 # from https://towardsdatascience.com/k-nearest-neighbors-algorithm-with-examples-in-r-simply-explained-knn-1f2c88da405c
@@ -31,7 +31,20 @@ windows.knn.norm[5] <- windows.knn.norm.56[1]
 windows.knn.norm[6] <- windows.knn.norm.56[2]
 
 # features for knn
-features.knn <- windows.knn.norm[c(2,3,4,5,6)]
-target.knn <- windows.knn.norm[1]
+features.knn <- windows.knn.norm[,c(3,4,5,6)]
+target.knn <- windows.knn.norm[c(1)]
+
+# convert cat to numeric
+features.knn[1] <- as.numeric(features.knn[,1])
+features.knn[2] <- as.numeric(features.knn[,2])
+
+target.knn[1] <- as.numeric(target.knn[,1])
 
 # knn init
+neighbors <- knn.cv(
+  train = features.knn[,1:ncol(features.knn)], 
+  cl = target.knn[,1:ncol(target.knn)], 
+  k=13)
+
+# norm ratings -> neighbors cosine score correlate
+
