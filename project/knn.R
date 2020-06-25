@@ -47,4 +47,32 @@ neighbors <- knn.cv(
   k=13)
 
 # norm ratings -> neighbors cosine score correlate
+# numeric
+norm_f.ratings.numeric <- norms_f.ratings
+norm_f.ratings.numeric[1] <- as.numeric(as.factor(unlist(norm_f.ratings.numeric[1])))
 
+# average cosine score for neigbors
+words <- norm_f.ratings.numeric$Word
+avg.cosine <- c()
+
+for (i in 1:length(words)) {
+  t <- words[i]
+  sum <- 0.0
+  
+  for (n in neighbors[i]) {
+    n <- as.numeric(n)
+    score <- (n * t) / sqrt(t) * sqrt(n)
+    sum <- sum + score
+  }
+  
+  avg.cosine <- append(avg.cosine, sum / length(neighbors[i]))
+}
+
+
+# create a dataframe
+target.to.avgcos <- as.data.frame(cbind(words, avg.cosine[1:7992]))
+
+# correlation
+correlate(norm_f.ratings.numeric$Conc.M, target.to.avgcos$V2)
+correlate(norm_f.ratings.numeric$Conc.SD, target.to.avgcos$V2)
+correlate(norm_f.ratings.numeric$Percent_known, target.to.avgcos$V2)
