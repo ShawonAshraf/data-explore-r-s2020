@@ -10,26 +10,17 @@ library(pacman)
 # load lsr
 pacman::p_load(lsr)
 
+# fiter norms
+norms_f <- select(norms, Word, Conc.M, Conc.SD, Percent_known, Dom_Pos)
+norms_f <- subset(norms_f, Dom_Pos == "Noun", select = c(Word, Conc.M, Conc.SD, Percent_known))
+
+?select
+
 # get summary of dataframe
-summary(norms)
-
-# interquartile range for freq
-IQR(windows$freq)
-
-# for lmi
-IQR(windows$lmi)
-
-# skew
-library(psych)
-skew.freq <- skew(windows$freq)
-skew.freq
-
-
-skew.lmi <- skew(windows$lmi)
-skew.lmi
+summary(norms_f)
 
 # plot
-plot(sort(windows$context_pos), main="Context POS")
-plot(sort(windows$freq), main="Frequency")
-plot(sort(windows$lmi), main="LMI")
+plot(sort(norms_f$Conc.M), main="Mean")
+plot(sort(norms_f$Conc.SD), main="STD")
+plot(sort(norms_f$Percent_known), main="Percent Known")
 
