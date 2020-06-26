@@ -45,7 +45,7 @@ The Norms dataset consist of 8 columns :
 	\item Number of persons not knowing the word
 	\item Total number or persons rating words
 	\item Percentage of persons knowing the word
-	\item SUBTLEX-US frequency count of the word
+	\item SUBTLEX-US frequency count of the word \cite{brysbaert_new_2009}
 \end{enumerate}
 
 \subsection{Variables chosen}
@@ -57,6 +57,38 @@ The Norms dataset consist of 8 columns :
 \end{itemize}
 
 
+\section{Preprocessing}
+\paragraph{}
+The provided datasets were processed using unix tools such as awk, cat, etc.
+
+\subsection{Windows}
+\begin{itemize}
+	\item POS : NN
+	\item Frequency count : Greater than 20000
+	\item Excluded characters : ":::"
+	\item The processed output was converted to a csv file for importing into R
+	\item Reduced from 49776264 items to 11046 after processing
+\end{itemize}
+
+\subsection{Frequencies}
+\begin{itemize}
+	\item POS : NN
+	\item Frequency count : Greater than 5000
+	\item The processed output was converted to a csv file for importing into R
+	\item Reduced from 326775 items to 59947 after processing
+\end{itemize}
+
+
+\subsection{Norms}
+\paragraph{}
+The Norms dataset was already provided in .xlsx format and did not need preprocessing via Unix tools. Norms with words having the POS tag Noun were extracted using R function `subset` during analysis.
+
+
+\section{Descriptive Statistics and plots of Norms}
+
+\subsection{Descriptive Statistics}
+\paragraph{}
+GG
 
 
 % Bibliography:
