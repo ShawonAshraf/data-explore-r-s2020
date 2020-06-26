@@ -1,12 +1,31 @@
 \begin{thebibliography}{1}
 
-\bibitem{brys:1}
+\bibitem{brys}
 M.~Brysbaert, A.~B. Warriner, and V.~Kuperman, ``Concreteness ratings for 40
   thousand generally known english word lemmas,'' {\em Behavior Research
   Methods}, vol.~46, no.~3, pp.~904--911, 2013.
 
-\bibitem{paivio:2}
+\bibitem{paivio}
 M.~Sadoski and A.~Paivio, {\em Imagery and text}.
 \newblock Routledge, 2013.
+
+\bibitem{schwanenflugel}
+P.~J. Schwanenflugel, K.~K. Harnishfeger, and R.~W. Stowe {\em Journal of
+  Memory and Language}, vol.~27, no.~5, pp.~499--520, 1988.
+
+\bibitem{vigliocco_vinson_lewis_garrett_2004}
+G.~Vigliocco, D.~P. Vinson, W.~Lewis, and M.~F. Garrett, ``Representing the
+  meanings of object and action words: The featural and unitary semantic space
+  hypothesis,'' {\em Cognitive Psychology}, vol.~48, no.~4, pp.~422--488, 2004.
+
+\bibitem{andrews_vigliocco_vinson_2009}
+M.~Andrews, G.~Vigliocco, and D.~Vinson, ``Integrating experiential and
+  distributional data to learn semantic representations.,'' {\em Psychological
+  Review}, vol.~116, no.~3, pp.~463--498, 2009.
+
+\bibitem{connell}
+L.~Connell and D.~Lynott, ``Strength of perceptual experience predicts word
+  processing performance better than concreteness or imageability,'' {\em
+  Cognition}, vol.~125, no.~3, pp.~452--465, 2012.
 
 \end{thebibliography}
