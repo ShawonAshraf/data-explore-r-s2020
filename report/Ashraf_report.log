@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  26 JUN 2020 09:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  26 JUN 2020 09:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -357,71 +357,56 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count87
 )
-(./Ashraf_report.aux
-
-! Package natbib Error: Bibliography not compatible with author-year citations.
-
-(natbib)                Press <return> to continue in numerical citation style.
-
-
-See the natbib package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.11 ...mand\NAT@force@numbers{}\NAT@force@numbers
-                                                  
-Check the bibliography entries for non-compliant syntax,
-or select author-year BibTeX style, e.g. plainnat
-
-)
+(./Ashraf_report.aux)
 \openout1 = `Ashraf_report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 20.
- (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 19.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 26.
+(Font)              <12> on input line 25.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 26.
+(Font)              <8> on input line 25.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 26.
+(Font)              <6> on input line 25.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 29.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 28.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 31.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 30.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 34.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
 
 (./Ashraf_report.bbl [1
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]) [2] (.
 /Ashraf_report.aux) ) 
 Here is how much of TeX's memory you used:
- 950 strings out of 492995
- 10480 string characters out of 6132704
- 66406 words of memory out of 5000000
- 4535 multiletter control sequences out of 15000+600000
+ 952 strings out of 492995
+ 10513 string characters out of 6132704
+ 66681 words of memory out of 5000000
+ 4537 multiletter control sequences out of 15000+600000
  17393 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 23i,6n,20p,982b,207s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 23i,6n,28p,977b,209s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8
 r.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></us
 r/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/te
 xlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Ashraf_report.pdf (2 pages, 38292 bytes).
+Output written on Ashraf_report.pdf (2 pages, 39715 bytes).
 PDF statistics:
  24 PDF objects out of 1000 (max. 8388607)
  16 compressed objects within 1 object stream
