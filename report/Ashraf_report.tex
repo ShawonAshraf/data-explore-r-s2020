@@ -1,0 +1,64 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                                                             %%%
+%%%      File: report.tex                                       %%%
+%%%    Author: Sabine Schulte im Walde                          %%%
+%%%   Purpose: Data report template                             %%%
+%%%                                                             %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[11pt,a4paper]{article}
+
+
+\usepackage{a4wide}
+\usepackage{times}
+\usepackage[utf8]{inputenc}
+
+\usepackage{natbib}
+
+
+\begin{document}
+
+\title{Large Scale Data Exploration with R}
+\author{Ashraf, Shawon}
+\date{26 June, 2020}
+
+\maketitle
+
+
+\section{Norms}
+
+\subsection{Dataset}
+
+\paragraph{}
+For this data exploration project, I have used the Norms dataset presented by Brysbaert et al. \cite{brys:1} which contains the concreteness ratings for 40 thousand generally known English word lemmas. According to the authors, concreteness is the measurement of the concept a word demotes to an entity. The concept of concreteness of words came Paivio’s dual-coding theory (Paivio, 1971, 2013) which states that concrete words are easier to recall and activate in memory compared to non concrete words. Also,  Schwanenflugel, Harnishfeger, and Stowe (1988) presented that concrete words are easier to recall because of the supporting memory context imposed by the words on entities to the degree abstract words can not. Vigliocco, Vinson, Lewis, and Garrett (2004; see also Andrews, Vigliocco, and Vinson, 2009) presented a semantic theory which states that the learning process of words are more based on direct experience of the learners.
+
+\paragraph{}
+The authors based their presentation of the Norms based on Connell and Lynott, 2012; Lynott and Connell, 2009 which states that despite words being learnt on direct experiences, the existing concreteness ratings were too much focused on visual perception whereas Lynott et al. found that the concreteness ratings were correlated not only on visual perception but also on touch and smell. The overcome the limitations of the existing datasets, the authors came up with the dataset in use which was collected by asking English speakers to rate the concreteness of the words based on their knowledge on them.
+
+\paragraph{}
+The Norms dataset consist of 8 columns :
+\begin{enumerate}
+	\item Word
+	\item Whether the word is a Bigram or not
+	\item Mean concreteness rating
+	\item Standard deviation of the concreteness ratings
+	\item Number of persons not knowing the word
+	\item Total number or persons rating words
+	\item Percentage of persons knowing the word
+	\item SUBTLEX-US frequency count of the word
+\end{enumerate}
+
+\subsection{Variables chosen}
+
+
+% Bibliography:
+
+\bibliography{refs}
+\bibliographystyle{ieeetr}
+
+
+\end{document}
+
+
+%% --- END OF FILE
