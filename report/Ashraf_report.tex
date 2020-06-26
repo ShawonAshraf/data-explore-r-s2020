@@ -169,11 +169,33 @@ freq   & -0.008 & 0.016 & -0.013       \\ \bottomrule
 
 \begin{itemize}
 	\item Target words and their norms were loaded into vectors
-	\item Frequency and lmi of the target words were normalized
-	norm(x)
-	\item The processed output was converted to a csv file for importing into R
-	\item Reduced from 326775 items to 59947 after processing
+	\item Frequency and lmi of the target words were normalized using
+		$(x -min(x))/(max(x)-min(x))$
+		
+	\item $k = 13$
+	\item Categorical data was converted to numeric data using R method as.numeric
+	\item Feature and target (Word) vectors were created
+	\item Cosine score was computed for each of the nearest neighbors of the target words using
+	\begin{equation*}
+	cos(u,v) = \frac{\frac{u}{v}}{\left \| u \right \| \left \| v \right \|}
+	\end{equation*}
+	and then their mean was computed
+	
+	\item The mean was correlated with Norms variables for measuring semantic diversity.
 \end{itemize}
+
+\paragraph{}
+The results were as follows:
+\begin{table}[H]
+\centering
+\begin{tabular}{@{}llll@{}}
+\toprule
+target  & mean   & std   & percent known \\ \midrule
+avg cos & -0.029 & 0.026 & -0.007        \\ \bottomrule
+\end{tabular}
+\end{table}
+
+
 
 
 % Bibliography:
