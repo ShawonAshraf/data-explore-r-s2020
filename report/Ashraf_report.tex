@@ -137,7 +137,7 @@ The minimum value is 0.8462 and the variable ranges from 0.8462 to 1. Median and
 
 \subsection{The ratings of the chosen variables are related to each other across the target words}
 \paragraph{}
-The Windows dataset contains multiple instances of the same dataset as it also contains the context word related to each of them. To minimize them, the means of context frequency and lmi for the words taken and put into a vector. Then norms for the target words were loaded to run correlation on based on the norm variables. For correlation the lsr\cite{lsr} package was used.
+The Windows dataset contains multiple instances of the same dataset as it also contains the context word related to each of them. To minimize them, the means of context frequency and lmi for the words taken and put into a vector. Then norms for the target words were loaded to run correlation on based on the norm variables. For correlation the lsr\cite{lsr} package was used where Pearson Correlation Coefficient\cite{pearson} is the default metric for finding correlation.
 
 \paragraph{}
 The correlation results were as follows:
@@ -177,7 +177,7 @@ freq   & -0.008 & 0.016 & -0.013       \\ \bottomrule
 	\item Feature and target (Word) vectors were created
 	\item Cosine score was computed for each of the nearest neighbors of the target words using
 	\begin{equation*}
-	cos(u,v) = \frac{\frac{u}{v}}{\left \| u \right \| \left \| v \right \|}
+	cos(u,v) = \frac{uv}{\left \| u \right \| \left \| v \right \|}
 	\end{equation*}
 	and then their mean was computed
 	
@@ -195,7 +195,26 @@ avg cos & -0.029 & 0.026 & -0.007        \\ \bottomrule
 \end{tabular}
 \end{table}
 
+\section{Insights}
 
+\subsection{Hypothesis 1}
+\begin{itemize}
+	\item Frequency is positively correlated with standard deviation and percent known variables. Which indicate that 
+	the words with higher frequency are more prominent and more known to persons who were asked to rate the words
+	
+	\item For lmi, positive correlation is seen with the mean and percent known variables.
+	\item Given the hypothesis, it can be said that only percent known variable is positively correlated with both frequency and lmi of the target words. Other variables are not related with all the target word variables. 
+\end{itemize}
+
+\subsection{Hypothesis 2}
+\begin{itemize}
+	\item Only standard deviation of norms have a positive correlation with target word frequencies. Form this result it can be said the the frequency of the target words are more spread out than the ones in the norms.
+\end{itemize}
+
+\subsection{Hypothesis 3}
+\begin{itemize}
+	\item Here too, only standard deviation is positively correlated to average cosine score of the target words. Here too can be said that the Norms dataset can not fully capture the semantic features of the target words, as presented by Brysbaert et al. \citep{brys} that the norm datasets, despite having a large number of entries may fail to capture all the semantic features.
+\end{itemize}
 
 
 % Bibliography:
