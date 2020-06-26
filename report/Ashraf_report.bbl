@@ -34,4 +34,10 @@ M.~Brysbaert and B.~New, ``Moving beyond kučera and francis: A critical
   improved word frequency measure for american english,'' {\em Behavior
   Research Methods}, vol.~41, no.~4, pp.~977--990, 2009.
 
+\bibitem{lsr}
+D.~Navarro, {\em Learning statistics with R: A tutorial for psychology students
+  and other beginners. (Version 0.5)}.
+\newblock University of Adelaide, Adelaide, Australia, 2015.
+\newblock R package version 0.5.
+
 \end{thebibliography}

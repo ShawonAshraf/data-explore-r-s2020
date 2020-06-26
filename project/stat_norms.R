@@ -24,3 +24,7 @@ plot(sort(norms_f$Conc.M), main="Mean")
 plot(sort(norms_f$Conc.SD), main="STD")
 plot(sort(norms_f$Percent_known), main="Percent Known")
 
+boxplot(norms_f$Conc.M, main="Mean Concreteness")
+boxplot(norms_f$Conc.SD, main="STD of Concreteness")
+boxplot(norms_f$Percent_known, main="Percent Known")
+

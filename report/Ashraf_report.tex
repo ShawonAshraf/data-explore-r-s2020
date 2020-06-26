@@ -1,19 +1,14 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%                                                             %%%
-%%%      File: report.tex                                       %%%
-%%%    Author: Sabine Schulte im Walde                          %%%
-%%%   Purpose: Data report template                             %%%
-%%%                                                             %%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 \documentclass[11pt,a4paper]{article}
 
 \usepackage{a4wide}
 \usepackage{times}
 \usepackage[utf8]{inputenc}
-
+\usepackage{graphicx}
+\usepackage{subcaption}
 \usepackage[square,sort,comma,numbers]{natbib}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{amsmath}
 
 
 \begin{document}
@@ -86,9 +81,99 @@ The Norms dataset was already provided in .xlsx format and did not need preproce
 
 \section{Descriptive Statistics and plots of Norms}
 
-\subsection{Descriptive Statistics}
+\subsection{Mean Concreteness}
 \paragraph{}
-GG
+The minimum mean concreteness value is 1.07 and the variable ranges from 1.07 to 5.0. Median and mean values are 3.66 and 3.53 respectively. While the first quartile ranges to 2.67, the third quartile peaks at 4.46.
+
+\begin{figure}[H]
+  \centering
+  \begin{subfigure}[b]{0.4\linewidth}
+    \includegraphics[width=\linewidth]{images/mean_norm.png}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.4\linewidth}
+    \includegraphics[width=\linewidth]{images/box_concm.png}
+  \end{subfigure}
+  \caption{Mean concreteness}
+  \label{fig:concm}
+\end{figure}
+
+
+
+\subsection{Standard Deviation of Concreteness}
+\paragraph{}
+The minimum value is 0 and the variable ranges from 0 to 1.890. Median and mean values are 1.2 and 1.109 respectively. While the first quartile ranges to 0.920, the third quartile peaks at 1.370.
+
+\begin{figure}[H]
+  \centering
+  \begin{subfigure}[b]{0.4\linewidth}
+    \includegraphics[width=\linewidth]{images/std_norm.png}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.4\linewidth}
+    \includegraphics[width=\linewidth]{images/box_conc_std.png}
+  \end{subfigure}
+  \caption{Standard deviation of concreteness}
+  \label{fig:concsd}
+\end{figure}
+
+
+
+\subsection{Percentage Known}
+\paragraph{}
+The minimum value is 0.8462 and the variable ranges from 0.8462 to 1. Median and mean values are 1 and 0.9720 respectively. While the first quartile ranges to 0.9630, the third quartile peaks at 1.
+
+\begin{figure}[H]
+  \centering
+  \begin{subfigure}[b]{0.4\linewidth}
+    \includegraphics[width=\linewidth]{images/perc_known_norm.png}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.4\linewidth}
+    \includegraphics[width=\linewidth]{images/box_perc_known.png}
+  \end{subfigure}
+  \caption{Percentage Known}
+  \label{fig:pk}
+\end{figure}
+
+\section{Hypothesis Testing Methods}
+
+\subsection{The ratings of the chosen variables are related to each other across the target words}
+\paragraph{}
+The Windows dataset contains multiple instances of the same dataset as it also contains the context word related to each of them. To minimize them, the means of context frequency and lmi for the words taken and put into a vector. Then norms for the target words were loaded to run correlation on based on the norm variables. For correlation the lsr\cite{lsr} package was used.
+
+\paragraph{}
+The correlation results were as follows:
+
+\begin{table}[H]
+\centering
+\begin{tabular}{@{}llll@{}}
+\toprule
+target    & mean   & std    & percent known \\ \midrule
+frequency & -0.029 & 0.040  & 0.010         \\
+lmi       & 0.033  & -0.008 & 0.020         \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{The target ratings in the norms are related to target corpus frequency}
+\paragraph{}
+For this hypothesis, norms were first loaded for the target words and then their correlation was measured. The result of the correlation was the following:
+
+\begin{table}[H]
+\centering
+\begin{tabular}{@{}llll@{}}
+\toprule
+target & mean   & std   & percent known \\ \midrule
+freq   & -0.008 & 0.016 & -0.013       \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{The target ratings in the norms are related to the semantic diversity of their distributional nearest neighbours}
+
+\begin{itemize}
+	\item Target words and their norms were loaded into vectors
+	\item Frequency and lmi of the target words were normalized
+	norm(x)
+	\item The processed output was converted to a csv file for importing into R
+	\item Reduced from 326775 items to 59947 after processing
+\end{itemize}
 
 
 % Bibliography:
